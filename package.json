@@ -1,0 +1,41 @@
+{
+  "name": "slack-daily-priorities",
+  "version": "1.0.0",
+  "description": "AI-powered Slack monitoring system that provides daily priority summaries",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc -w",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "slack",
+    "ai",
+    "priorities",
+    "daily-summary",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@slack/bolt": "^3.17.0",
+    "@slack/web-api": "^6.11.0",
+    "better-sqlite3": "^9.4.3",
+    "dotenv": "^16.4.1",
+    "node-cron": "^3.0.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^20.11.0",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
